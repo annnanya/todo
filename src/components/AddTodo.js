@@ -12,18 +12,18 @@ const AddTodo = () => {
     };
 
     return (
-        <div className="">
-            <form onSubmit={handleSubmit} className="">
+        <div className='container-add'>
+            <form onSubmit={handleSubmit} className='form'>
                 <input
                     type="text"
                     placeholder="Add a new task"
-                    className=""
+                    className='text-input'
                     value={input}
                     onChange={(event) => setInput(event.target.value)}
                 />
                 <button
                     type="submit"
-                    className=""
+                    className='button-submit'
                 >
                     Add
                 </button>

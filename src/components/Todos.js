@@ -6,11 +6,11 @@ const Todos = () => {
     const dispatch = useDispatch();
     const todos = useSelector(state => state.todos)
     return (
-        <div>
+        <div className='container-todo'>
             {todos.map(todo =>
                 <>
                     <div key={todo.id}>{todo.text}</div>
-                    <button className='' onClick={() => dispatch(removeTodo(todo.id))}>Delete</button>
+                    <button className='button-delete' onClick={() => dispatch(removeTodo(todo.id))}>Delete</button>
                 </>
             )}
         </div>
